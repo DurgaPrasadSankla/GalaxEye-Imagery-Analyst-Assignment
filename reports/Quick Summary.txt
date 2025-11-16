@@ -1,0 +1,32 @@
+Analytical Report: Cross-Sensor (EO/SAR) Impact Analysis
+
+This directory contains the final analysis report for the GalaxEye Imagery Analyst assignment.
+
+File: Durga Prasad Sankla GalaxEye Report.pdf
+
+
+Report Summary
+
+This report presents a comprehensive cross-sensor (EO/SAR) impact analysis of the catastrophic flooding event along the Yamuna River in Delhi during July 2023. The primary objective is to demonstrate the critical importance of a multi-sensor approach for disaster management, especially when optical sensors are rendered unusable.
+
+The analysis compares "Before" (June 13, 2023) and "After" (July 13, 2023) imagery from Sentinel-1 (SAR) and Sentinel-2 (Optical).
+
+Key Findings & Conclusions:
+
+	1. Optical Sensor Failure: During the peak flood, the Sentinel-2 optical sensor's view was completely blocked by thick monsoon clouds, making it analytically useless for mapping the 	disaster.
+
+	2. SAR Sensor Success: In the same 24-hour period, Sentinel-1 SAR signals penetrated the monsoon clouds and rain effortlessly. This provided a perfectly clear and horrifyingly 	accurate map of the flood's true extent.
+
+	3. Analytical Challenges: The report identifies key analytical risks, including false positives (e.g., airport runways appearing as water) and false negatives in urban areas (the 	double-bounce effect causing flooded streets to appear bright instead of dark).
+
+	4. Core Conclusion: The analysis validates a SAR-first approach for any operational monitoring system focused on active storm and flood events, proving its irreplaceable value for 	immediate disaster response.
+
+Strategic Recommendations:
+
+	1. The report concludes with three strategic recommendations for building an operational tool:
+
+	2. Prioritize SAR for Storm Events: Default to SAR (Sentinel-1) as the primary data source during active weather events.
+
+	3. Implement UI Cloud-Warning: Automatically alert users when an optical image is obscured and prompt them to view the clear SAR alternative.
+
+	4. Refine Urban Flood Models: Train detection models to look for both new black areas (open-water floods) and new bright areas (urban street-level floods).
